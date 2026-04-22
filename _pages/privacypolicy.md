@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Privacy Policy
-include_in_header: false
+title: Privacy
+include_in_header: true
+order: 2
 ---
 
 **Last updated**  

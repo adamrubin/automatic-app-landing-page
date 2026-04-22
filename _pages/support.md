@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Support
-include_in_header: false
+include_in_header: true
+order: 1
 ---
 
 # Support

@@ -169,7 +169,7 @@ nav > ul {
 	color: #fff;
 	display: flex;
 	list-style-type: none;
-
+	font-size: 1.5rem;
 }
 
 nav > ul li {
@@ -214,14 +214,14 @@ nav > ul li a:active {
 	grid-area: i;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 40px;
+	padding-top: 16px;
 	align-content: flex-start;
 }
 
 @media only screen and (max-width: 992px) {
 
 	.appInfo {
-		padding-top: 20px;
+		padding-top: 0;
 		justify-content: center;
 	}
 
@@ -351,7 +351,8 @@ nav > ul li a:active {
 	background-image: url($device-color);
 	background-size: 400px auto;
 	background-repeat: no-repeat;
-	margin-top: 32px;
+	margin-top: 16px;
+	min-height: 810px;
 }
 
 .iphoneScreen {
@@ -380,6 +381,7 @@ nav > ul li a:active {
 
 	.iphonePreview {
 		background-size: 370px auto;
+		min-height: 750px;
 	}
 
 	.iphoneScreen {
