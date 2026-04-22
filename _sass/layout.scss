@@ -1,18 +1,7 @@
-.imageWrapper {					// Sets the background image in the header area
+.imageWrapper {					// Hero gradient background
 	height: 714px;
-	background: 
-		linear-gradient(
-		rgba($image-overlay-color, $image-overlay-transparency), 
-		rgba($image-overlay-color, $image-overlay-transparency)
-		   ),
-		
-		url($header-image);
-
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top;
+	background: radial-gradient(ellipse at top left, #3d1d6e 0%, #0b0618 70%);
 	border-radius: 0px 0px 40px 40px;
-
 }
 
 .headerBackground {
@@ -26,10 +15,6 @@
 		height: 80px;
 	}
 
-}
-
-.subPageHeaderBackground {
-	background-color: #fff;
 }
 
 .container {					// Set up the container for the site content
@@ -50,7 +35,6 @@
 
 .subPageContainer {
 	grid-template-rows: 115px auto auto auto;
-	background-color: #fff;
 }
 
 @media only screen and (max-width: 768px) {
@@ -219,23 +203,6 @@ nav > ul li a:hover,
 nav > ul li a:active {
 	text-decoration: none;
 	color: rgba($header-title-color, 1);
-}
-
-
-
-// Sub Page Header Styling
-.subPageHeaderBackground .logo > p {
-	color: #000;
-}
-
-.subPageHeaderBackground nav > ul li a:link,
-.subPageHeaderBackground nav > ul li a:visited {
-	color: rgba(#000, 0.6);
-}
-
-.subPageHeaderBackground nav > ul li a:hover,
-.subPageHeaderBackground nav > ul li a:active {
-	color: rgba(#000, 1);
 }
 
 
