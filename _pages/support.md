@@ -1,0 +1,8 @@
+---
+layout: page
+title: Support
+include_in_header: true
+---
+
+# Support
+For support, please contact support@richminds.com
