@@ -13,17 +13,17 @@ RichMinds is a single-player mobile game. This Privacy Policy explains what info
 ## Information We Collect
 
 When you create an account, we collect:
-	•	Email address
-	•	Username
-	•	Password
+* Email address
+* Username
+* Password
 
 This information is used to create and manage your account and support your experience in the app.
 
 ## How We Use Information
 We use your information to:
-	•	create and manage your account
-	•	allow you to access your game data
-	•	support core app functionality
+* create and manage your account
+* allow you to access your game data
+* support core app functionality
 
 ## Data Storage and Security
 Your information is securely stored using Amazon Web Services (AWS) through AWS Amplify.
@@ -51,5 +51,4 @@ We may update this Privacy Policy from time to time. Any changes will be reflect
 
 ## Contact
 
-If you have any questions about this Privacy Policy, please contact:
-[privacy@richminds.com]
+If you have any questions about this Privacy Policy, please contact privacy@richminds.com
