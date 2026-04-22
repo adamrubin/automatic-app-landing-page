@@ -437,7 +437,8 @@ nav > ul li a:active {
 		display: flex;
 		background-size: 260px auto;
 		background-position: center 0;
-		margin-top: 47px;
+		margin-top: 24px;
+		min-height: 0;
 		justify-content: center;
 		padding-bottom: 24px;
 	}
