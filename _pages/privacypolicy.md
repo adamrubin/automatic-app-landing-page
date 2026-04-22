@@ -23,7 +23,11 @@ This information is used to create and manage your account and support your expe
 We use your information to:
 * create and manage your account
 * allow you to access your game data
-* support core app functionality
+* support core app functionality, including gameplay features
+
+## Virtual Currency and Gameplay
+
+RichMinds uses virtual, in-game currency for gameplay mechanics such as predictions and wagering. No real money transactions or gambling are involved, and in-game currency has no real-world value.
 
 ## Data Storage and Security
 Your information is securely stored using Amazon Web Services (AWS) through AWS Amplify.
