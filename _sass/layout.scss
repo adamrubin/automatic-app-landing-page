@@ -197,12 +197,13 @@ nav > ul li a:link,
 nav > ul li a:visited {
 	text-decoration: none;
 	color: rgba($header-title-color, 0.6);
+	transition: color 200ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 nav > ul li a:hover,
 nav > ul li a:active {
 	text-decoration: none;
-	color: rgba($header-title-color, 1);
+	color: $accent-color;
 }
 
 
@@ -651,4 +652,43 @@ footer {
 
 .hidden {
 	display: none;
+}
+
+
+// Hero load animation
+@keyframes riseIn {
+	from { opacity: 0; transform: translateY(8px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+.logo,
+.iphonePreview,
+.appInfo {
+	animation: riseIn 400ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.logo { animation-delay: 0ms; }
+.iphonePreview { animation-delay: 120ms; }
+.appInfo { animation-delay: 240ms; }
+
+// App Store / Play Store button polish
+.appStoreLink,
+.playStoreLink {
+	display: inline-block;
+	transition: transform 200ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.appStoreLink:hover,
+.playStoreLink:hover {
+	transform: scale(1.02);
+}
+
+.appStoreLink img,
+.playStoreLink img {
+	transition: filter 200ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.appStoreLink:hover img,
+.playStoreLink:hover img {
+	filter: drop-shadow(0 0 24px rgba(245, 167, 66, 0.35));
 }
