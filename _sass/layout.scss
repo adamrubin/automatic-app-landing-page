@@ -1,18 +1,18 @@
 .imageWrapper {					// Hero gradient background
-	height: 714px;
 	background: radial-gradient(ellipse at top left, #3d1d6e 0%, #0b0618 70%);
 	border-radius: 0px 0px 40px 40px;
+	padding-bottom: 80px;
 }
 
 .headerBackground {
-	height: 115px;
+	min-height: 115px;
 	background-color: rgba($header-color, $header-transparency);
 }
 
 @media only screen and (max-width: 768px) {
 
 	.headerBackground {
-		height: 80px;
+		min-height: 80px;
 	}
 
 }
@@ -605,4 +605,76 @@ footer {
 .appStoreLink:hover img,
 .playStoreLink:hover img {
 	filter: drop-shadow(0 0 24px rgba(245, 167, 66, 0.35));
+}
+
+
+// Below-hero content section (panes)
+.contentSection {
+	max-width: $content-width;
+	margin: 0 auto;
+	padding: 100px 15px 120px;
+}
+
+.sectionLabel {
+	color: $accent-color;
+	font-size: 1.3rem;
+	font-weight: 600;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.panes {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+	margin-top: 48px;
+}
+
+.pane {
+	background-color: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 16px;
+	padding: 32px;
+	transition: background-color 200ms cubic-bezier(0.2, 0.8, 0.2, 1),
+	            border-color 200ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.pane:hover {
+	background-color: rgba(255, 255, 255, 0.05);
+	border-color: rgba(245, 167, 66, 0.3);
+}
+
+.paneNumber {
+	color: $accent-color;
+	font-size: 2rem;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+}
+
+.paneHeading {
+	color: #ffffff;
+	font-size: 2rem;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	margin-top: 16px;
+}
+
+.paneBody {
+	color: rgba(255, 255, 255, 0.65);
+	font-size: 1.6rem;
+	line-height: 1.5;
+	margin-top: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+
+	.panes {
+		grid-template-columns: 1fr;
+	}
+
+	.contentSection {
+		padding: 60px 15px 80px;
+	}
+
 }
