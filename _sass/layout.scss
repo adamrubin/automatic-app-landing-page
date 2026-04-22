@@ -24,38 +24,28 @@
 	padding-left: 15px;
 	padding-right: 15px;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 115px auto auto auto;
 	grid-column-gap: 30px;
-	grid-template-areas: 
+	grid-template-areas:
 		"h h h h h h h h h h h h"
-		"p p p p p i i i i i i i"
-		"c c c c c c c c c c c c"
-		"f f f f f f f f f f f f";
+		"p p p p p i i i i i i i";
 }
 
 .subPageContainer {
-	grid-template-rows: 115px auto auto auto;
-}
-
-@media only screen and (max-width: 768px) {
-
-	.container {					// Set up the container for the site content
-		grid-template-rows: 80px auto auto auto;
-	}
+	grid-template-areas:
+		"h h h h h h h h h h h h"
+		"i i i i i i i i i i i i";
 }
 
 @media only screen and (max-width: 992px) {
 
 	.container {
 		grid-column-gap: 0px;
-		grid-template-columns: 1;
-		grid-template-rows: 115px auto auto auto auto;
-		grid-template-areas: 
+		grid-template-columns: 1fr;
+		grid-template-areas:
 			"h h h h h h h h h h h h"
-			"i i i i i i i i i i i i"
 			"p p p p p p p p p p p p"
-			"c c c c c c c c c c c c"
-			"f f f f f f f f f f f f";
+			"d d d d d d d d d d d d"
+			"i i i i i i i i i i i i";
 	}
 }
 
@@ -210,12 +200,17 @@ nav > ul li a:active {
 
 // App Title, Price, Description and Links
 
-.appInfo {
+.appInfoColumn {
 	grid-area: i;
 	display: flex;
 	flex-direction: column;
 	padding-top: 16px;
-	min-height: 810px;
+}
+
+.appInfo {
+	grid-area: i;
+	display: flex;
+	flex-direction: column;
 }
 
 .heroHeadline {
@@ -234,20 +229,16 @@ nav > ul li a:active {
 	max-width: 440px;
 }
 
-@media only screen and (max-width: 1070px) {
-
-	.appInfo {
-		min-height: 750px;
-	}
-
-}
-
 @media only screen and (max-width: 992px) {
+
+	.appInfoColumn {
+		display: contents;
+	}
 
 	.appInfo {
 		padding-top: 0;
-		min-height: 0;
 		align-items: center;
+		margin-top: 40px;
 	}
 
 	.heroHeadline {
@@ -336,9 +327,9 @@ nav > ul li a:active {
 
 .downloadButtonsContainer {
 	display: inline-block;
-	margin-top: auto;
+	grid-area: d;
+	margin-top: 40px;
 	align-self: center;
-	padding-bottom: 16px;
 	filter: $drop-shadow;
 }
 
@@ -346,8 +337,8 @@ nav > ul li a:active {
 
 	.downloadButtonsContainer {
 		margin-top: 32px;
-		padding-bottom: 0;
 		text-align: center;
+		justify-self: center;
 	}
 
 }
@@ -577,13 +568,15 @@ footer {
 
 .logo,
 .iphonePreview,
-.appInfo {
+.appInfo,
+.downloadButtonsContainer {
 	animation: riseIn 400ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 
 .logo { animation-delay: 0ms; }
 .iphonePreview { animation-delay: 120ms; }
 .appInfo { animation-delay: 240ms; }
+.downloadButtonsContainer { animation-delay: 320ms; }
 
 // App Store / Play Store button polish
 .appStoreLink,
