@@ -213,16 +213,49 @@ nav > ul li a:active {
 .appInfo {
 	grid-area: i;
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	padding-top: 16px;
-	align-content: flex-start;
+	min-height: 810px;
+}
+
+.heroHeadline {
+	color: #ffffff;
+	font-size: 4rem;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	line-height: 1.1;
+}
+
+.heroSubhead {
+	color: rgba(255, 255, 255, 0.65);
+	font-size: 1.7rem;
+	line-height: 1.5;
+	margin-top: 20px;
+	max-width: 440px;
+}
+
+@media only screen and (max-width: 1070px) {
+
+	.appInfo {
+		min-height: 750px;
+	}
+
 }
 
 @media only screen and (max-width: 992px) {
 
 	.appInfo {
 		padding-top: 0;
-		justify-content: center;
+		min-height: 0;
+		align-items: center;
+	}
+
+	.heroHeadline {
+		text-align: center;
+	}
+
+	.heroSubhead {
+		text-align: center;
 	}
 
 }
@@ -303,17 +336,21 @@ nav > ul li a:active {
 
 .downloadButtonsContainer {
 	display: inline-block;
-	margin-top: 42px;
+	margin-top: auto;
+	align-self: center;
+	padding-bottom: 16px;
 	filter: $drop-shadow;
 }
 
 @media only screen and (max-width: 992px) {
 
 	.downloadButtonsContainer {
+		margin-top: 32px;
+		padding-bottom: 0;
 		text-align: center;
 	}
-	
-} 
+
+}
 
 .playStore {
 	height: 75px;
