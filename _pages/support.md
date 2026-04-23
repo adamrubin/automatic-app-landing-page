@@ -6,4 +6,4 @@ order: 1
 ---
 
 # Support
-For support, please contact support@richminds.com
+For support, please contact [support@richminds.com](mailto:support@richminds.com)

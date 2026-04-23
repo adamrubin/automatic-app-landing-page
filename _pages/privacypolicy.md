@@ -56,4 +56,4 @@ We may update this Privacy Policy from time to time. Any changes will be reflect
 
 ## Contact
 
-If you have any questions about this Privacy Policy, please contact privacy@richminds.com
+If you have any questions about this Privacy Policy, please contact [privacy@richminds.com](mailto:privacy@richminds.com)
