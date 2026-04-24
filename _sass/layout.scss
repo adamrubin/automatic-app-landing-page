@@ -12,7 +12,7 @@
 @media only screen and (max-width: 768px) {
 
 	.headerBackground {
-		min-height: 80px;
+		min-height: 60px;
 	}
 
 }
@@ -80,7 +80,7 @@ header {
 @media only screen and (max-width: 768px) {
 
 	.logo {
-		height: 80px;
+		height: 60px;
 		margin-right: 0px;
 	}
 
@@ -131,12 +131,9 @@ header {
 @media only screen and (max-width: 768px) {
 
 	.scroll {
-		height: 80px;
-		padding-top: 100px;
-		padding-bottom: 100px;
-		margin-top: -60px;
+		height: 60px;
 		justify-content: flex-start;
-	}	
+	}
 	
 } 
 
@@ -366,95 +363,57 @@ nav > ul li a:active {
 .iphonePreview {
 	grid-area: p;
 	background-image: url($device-color);
-	background-size: 400px auto;
+	background-size: 360px auto;
 	background-repeat: no-repeat;
 	margin-top: 16px;
-	min-height: 810px;
+	min-height: 729px;
 }
 
 .iphoneScreen {
-	width: 349px;
+	width: 314px;
 	-webkit-clip-path: url(#screenMask);
 	clip-path: url(#screenMask);
-	margin-left: 26px;
-	margin-top: 23px;
-}
-
-.videoContainer {
-	width: 349px;
-	height: 755px;
-	-webkit-clip-path: url(#screenMask);
-	clip-path: url(#screenMask);
-	margin-left: 26px;
-	margin-top: 23px;
-}
-
-.videoContainer > video {
-	width: 349px;
-	height: 755px;
+	margin-left: 23px;
+	margin-top: 21px;
 }
 
 @media only screen and (max-width: 1070px) {
 
 	.iphonePreview {
-		background-size: 370px auto;
-		min-height: 750px;
+		background-size: 333px auto;
+		min-height: 675px;
 	}
 
 	.iphoneScreen {
-		width: 322px;
-		margin-left: 24px;
-		margin-top: 22px;
+		width: 290px;
+		margin-left: 22px;
+		margin-top: 20px;
 	}
 
-	.videoContainer {
-		width: 322px;
-		height: 698px;
-		margin-left: 24px;
-		margin-top: 22px;
-	}
-	
-	.videoContainer > video {
-		width: 322px;
-		height: 698px;
-	}
-	
-} 
+}
 
 @media only screen and (max-width: 992px) {
 
 	.iphonePreview {
 		display: flex;
-		background-size: 260px auto;
+		background-size: 234px auto;
 		background-position: center 0;
-		margin-top: 24px;
+		margin-top: 20px;
 		min-height: 0;
 		justify-content: center;
 		padding-bottom: 48px;
 	}
 
 	.iphoneScreen {
-		width: 226px;
-		height: 488px;
+		width: 203px;
+		height: 439px;
 		-webkit-clip-path: url(#screenMask);
 		clip-path: url(#screenMask);
 		margin: 0px;
-		margin-top: 17px;
+		margin-top: 15px;
 	}
 
-	.videoContainer {
-		width: 226px;
-		height: 488px;
-		margin-left: 0px;
-		margin-top: 17px;
-	}
-
-	.videoContainer > video {
-		width: 226px;
-		height: 488px;
-	}
-	
-} 
+}
 
 
 .socialIconBack {
