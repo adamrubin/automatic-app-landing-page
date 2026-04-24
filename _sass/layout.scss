@@ -1,5 +1,5 @@
 .imageWrapper {					// Hero gradient background
-	background: radial-gradient(ellipse at top left, #3d1d6e 0%, #0b0618 70%);
+	background: #0b0618;
 	border-radius: 0px 0px 40px 40px;
 	padding-bottom: 80px;
 }
@@ -69,14 +69,6 @@ header {
 	margin-right: 30px;
 }
 
-.logo > p {
-	color: $header-title-color;
-	white-space: nowrap;
-	display: flex;
-	font-weight: bold;
-	margin-left: 15px;
-}
-
 @media only screen and (max-width: 768px) {
 
 	.logo {
@@ -84,11 +76,7 @@ header {
 		margin-right: 0px;
 	}
 
-	.logo > p {
-		display: none;
-	}
-	
-} 
+}
 
 .headerIcon {
 	width: 50px;
