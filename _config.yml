@@ -1,13 +1,13 @@
-# Jekyll config — kept minimal. Colors and copy live in SCSS / HTML.
+# Jekyll config - kept minimal. Colors and copy live in SCSS / HTML.
 
 # App identity (used by _includes/head.html, header, footer)
 app_name        : RichMinds
-page_title      : RichMinds — Predict the Story
+page_title      : RichMinds - Predict the Story
 app_description : A new story each season. Every prediction is a bet on where it's headed.
 app_icon        : assets/appicon.png
 appstore_link   :   # leave empty until live
 
-# Hero rotating screenshots — drop more PNGs into assets/screenshot/ and add the path here.
+# Hero rotating screenshots - drop more PNGs into assets/screenshot/ and add the path here.
 screenshots:
   - assets/screenshot/screenshot-1.png
   - assets/screenshot/screenshot-2.png
